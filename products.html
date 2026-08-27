@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>North Star Bakery | Home</title>
+  <title>North Star Bakery | Products</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -18,8 +19,8 @@
 
     <nav class="site-nav" aria-label="Primary navigation">
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -27,70 +28,65 @@
   </header>
 
   <main>
+    <h1>Our Bakery Products</h1>
 
-    <section class="hero">
-      <h1>Welcome to North Star Bakery</h1>
+    <section class="content-section">
+      <h2>Breads</h2>
 
+      <img
+        src="media/bakery-bread_c.png"
+        alt="Fresh artisan breads displayed at North Star Bakery"
+      >
+
+      <p>Our breads are baked fresh each morning using traditional techniques.</p>
+
+      <ul>
+        <li>Country Loaf: $6–$8</li>
+        <li>Sourdough: $7–$9</li>
+        <li>Whole Grain Bread: $6–$8</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Pastries</h2>
       <p>
-        Freshly baked breads, pastries, and cakes made with care for our local
-        community.
+        Choose from buttery pastries, seasonal fruit treats, and handcrafted favorites.
       </p>
 
-      <picture>
-        <source
-          media="(min-width: 768px)"
-          srcset="media/bakery-feature-large_c.png"
-        >
+      <ul>
+        <li>Croissants: $3–$5</li>
+        <li>Fruit Pastries: $4–$6</li>
+        <li>Muffins and Scones: $3–$5</li>
+      </ul>
+    </section>
 
+    <section class="content-section">
+      <h2>Cakes</h2>
+      <p>
+        We prepare cakes for birthdays, celebrations, and community events.
+      </p>
+
+      <ul>
+        <li>Small Celebration Cakes: $30–$45</li>
+        <li>Large Celebration Cakes: $50–$80</li>
+        <li>Custom Event Cakes: Pricing varies</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Signature Loaf</h2>
+
+      <figure>
         <img
-          src="media/bakery-feature-small_c.png"
-          alt="Fresh baked goods displayed at North Star Bakery"
+          src="media/bakery-signature-loaf_c.png"
+          alt="North Star Bakery signature artisan loaf with a golden crust"
         >
-      </picture>
+
+        <figcaption>
+          Our Signature Loaf represents the handmade style North Star Bakery is known for.
+        </figcaption>
+      </figure>
     </section>
-
-    <section class="content-section">
-      <h2>What We're Known For</h2>
-
-      <p>
-        North Star Bakery specializes in handcrafted breads, seasonal pastries,
-        and custom cakes prepared with thoughtfully selected ingredients.
-      </p>
-    </section>
-
-    <section class="content-section">
-      <h2>Featured Item of the Week</h2>
-
-      <h3>North Star Signature Loaf</h3>
-
-      <p>
-        Our signature artisan loaf features a crisp golden crust and soft,
-        flavorful interior. Available while supplies last.
-      </p>
-    </section>
-
-    <section class="content-section">
-      <h2>Visit Us</h2>
-
-      <p><strong>Location:</strong> 125 North Star Avenue</p>
-
-      <p>
-        <strong>Hours:</strong>
-        Monday–Saturday, 7:00 AM–6:00 PM
-      </p>
-    </section>
-
-    <section class="content-section">
-      <h2>A Welcome From Our Bakery</h2>
-
-      <audio controls>
-        <source src="media/bakery-welcome_c.mp3" type="audio/mpeg">
-
-        Your browser does not support the audio element.
-        Please contact North Star Bakery for more information.
-      </audio>
-    </section>
-
   </main>
 
   <footer class="site-footer">
@@ -99,5 +95,4 @@
   </footer>
 
 </body>
-
 </html>
