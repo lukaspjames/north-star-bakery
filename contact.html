@@ -3,127 +3,263 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>North Star Bakery | Contact</title>
-  <link rel="stylesheet" href="css/styles.css">
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  >
+
+  <script
+    src="js/main.js"
+    defer
+  ></script>
 </head>
 
 <body>
 
   <header class="site-header">
+
     <img
       src="media/bakery-logo_c.png"
       alt="North Star Bakery logo"
       class="site-logo"
     >
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav
+      class="site-nav"
+      aria-label="Primary navigation"
+    >
+
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="products.html">
+            Products
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="contact.html"
+            aria-current="page"
+          >
+            Contact
+          </a>
+        </li>
+
       </ul>
+
     </nav>
+
   </header>
 
   <main>
-    <h1>Contact and Pre-Order Requests</h1>
+
+    <h1>
+      Contact and Pre-Order Requests
+    </h1>
 
     <section class="content-section">
-      <h2>Visit North Star Bakery</h2>
 
-      <p><strong>Location:</strong> 125 North Star Avenue</p>
-      <p><strong>Hours:</strong> Monday–Saturday, 7:00 AM–6:00 PM</p>
-      <p>Use the form below to ask a question or request a bakery pre-order.</p>
+      <h2>
+        Visit North Star Bakery
+      </h2>
+
+      <p>
+        <strong>Location:</strong>
+        125 North Star Avenue
+      </p>
+
+      <p>
+        <strong>Hours:</strong>
+        Monday–Saturday, 7:00 AM–6:00 PM
+      </p>
+
+      <p>
+        Use the form below to ask a question
+        or request a bakery pre-order.
+      </p>
+
     </section>
 
     <section class="content-section">
-      <h2>Inquiry and Pre-Order Form</h2>
 
-      <form class="contact-form" action="#" method="post">
+      <h2>
+        Inquiry and Pre-Order Form
+      </h2>
+
+      <form
+        id="preorder-form"
+        class="contact-form"
+        action="#"
+        method="post"
+        novalidate
+      >
 
         <div class="form-group">
-          <label for="name">Name:</label>
+
+          <label for="name">
+            Name:
+          </label>
+
           <input
             type="text"
             id="name"
             name="name"
-            required
           >
+
+          <span
+            id="name-error"
+            class="error-message"
+          ></span>
+
         </div>
 
         <div class="form-group">
-          <label for="email">Email:</label>
+
+          <label for="email">
+            Email:
+          </label>
+
           <input
             type="email"
             id="email"
             name="email"
-            required
           >
+
+          <span
+            id="email-error"
+            class="error-message"
+          ></span>
+
         </div>
 
         <div class="form-group">
-          <label for="pickup-date">Pickup Date:</label>
+
+          <label for="pickup-date">
+            Pickup Date:
+          </label>
+
           <input
             type="date"
             id="pickup-date"
             name="pickup-date"
-            required
           >
+
         </div>
 
         <fieldset>
-          <legend>Request Type</legend>
+
+          <legend>
+            Request Type
+          </legend>
 
           <label>
+
             <input
               type="radio"
               name="request-type"
               value="pre-order"
-              required
             >
+
             Pre-Order
+
           </label>
 
           <label>
+
             <input
               type="radio"
               name="request-type"
               value="general-question"
             >
+
             General Question
+
           </label>
+
         </fieldset>
 
         <div class="form-group">
-          <label for="item-details">Item Details:</label>
+
+          <label for="item-details">
+            Item Details:
+          </label>
+
           <textarea
             id="item-details"
             name="item-details"
             rows="5"
-            required
           ></textarea>
+
+          <span
+            id="details-error"
+            class="error-message"
+          ></span>
+
         </div>
 
         <div class="form-group">
-          <label for="allergy-notes">Allergy Notes, if applicable:</label>
+
+          <label for="allergy-notes">
+            Allergy Notes, if applicable:
+          </label>
+
           <textarea
             id="allergy-notes"
             name="allergy-notes"
             rows="4"
           ></textarea>
+
         </div>
 
-        <button type="submit">Send Request</button>
+        <button type="submit">
+          Send Request
+        </button>
+
+        <p
+          id="form-success"
+          class="success-message"
+          aria-live="polite"
+        ></p>
+
       </form>
+
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 North Star Bakery</p>
-    <p>Freshly baked for our community.</p>
+
+    <p>
+      &copy; 2026 North Star Bakery
+    </p>
+
+    <p>
+      Freshly baked for our community.
+    </p>
+
   </footer>
 
 </body>
+
 </html>

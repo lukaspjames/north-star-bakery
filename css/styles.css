@@ -290,3 +290,54 @@ button:focus {
     gap: 2rem;
   }
 }
+
+/* ------------------------------
+   Touchstone 4 Interactivity
+------------------------------ */
+
+.favorite-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  margin: 1rem 0;
+}
+
+.favorite-button {
+  width: 100%;
+
+  background-color: var(--terracotta);
+  color: white;
+}
+
+.favorite-button:hover,
+.favorite-button:focus {
+  background-color: var(--brown);
+}
+
+.error-message {
+  min-height: 1.25rem;
+
+  color: #a61b1b;
+
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #356b35;
+
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+  .favorite-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .favorite-button {
+    width: auto;
+  }
+}
